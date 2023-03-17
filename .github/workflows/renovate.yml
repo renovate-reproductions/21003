@@ -5,7 +5,7 @@ on:
     branches:
       - 'renovate/*'
     paths:
-      - 'lambda/poetry.lock'
+      - 'poetry.lock'
   workflow_dispatch:
 
 jobs:
