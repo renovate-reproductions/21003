@@ -9,6 +9,5 @@
   ],
   "ignorePaths": [
     "requirements.txt"
-  ],
-  "rebaseWhen": "never"
+  ]
 }
