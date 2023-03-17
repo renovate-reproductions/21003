@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "workflow-dispatcher"
+name = "renovate-test"
 version = "0.1.0"
 description = ""
 authors = ["Tomohiko Ozawa <kota65535@gmail.com>"]

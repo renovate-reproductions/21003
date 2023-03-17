@@ -9,15 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  show-context:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Show github context object
-        run: echo $JSON
-        env:
-          JSON: ${{ toJSON(github) }}
-
-  pre-commit:
+  update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -36,7 +28,7 @@ jobs:
         with:
           user.name: github-actions[bot]
           user.email: 41898282+github-actions[bot]@users.noreply.github.com
-      - name: Run pre-commit hook script
+      - name: Update requirements.txt
         run: |
           poetry export -o requirements.txt
       - name: Commit & push
